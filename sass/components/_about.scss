@@ -1,0 +1,269 @@
+
+.about {
+   width: 98%;
+   margin: 0  auto;
+  //  margin-top: var(--margin-sec);
+
+  &_container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr) );
+  align-items: center;
+  justify-content: space-around;
+  gap: 7rem;
+  padding: 0 2rem;
+
+ 
+
+  @include respond(phone-tab) {
+    display: flex;
+    flex-direction: column;
+ 
+    &:nth-child(1) {
+      flex-direction: column-reverse;
+
+    }
+  }
+  }
+  
+  &_img {
+    height: 45rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+    @include respond(phone-tab) {
+      height: 35rem;
+    }
+
+
+
+    [data-cap="right"] {
+      right: 2rem !important;
+      transform: translate(50%);
+    }
+    [data-cap="left"] {
+      transform: translate(-100%);
+      left: 2rem !important;
+
+     }
+    
+     [data-cap] {
+      color: #fff;
+      background: #000;
+      position: absolute;
+      font-size: 1.5rem;
+      width: 16rem;
+      text-align: center;
+      border-radius: 25px;
+      z-index: 23;
+      top:4rem;
+      display: grid;
+      padding: 1rem;
+      opacity: 0;
+      // visibility: hidden;
+      place-content: center;
+      overflow: hidden;
+     }
+     
+     
+     
+     &:hover [data-cap] {
+      transition: all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+       display: block;
+      transform: translate(0);
+      opacity: 1;
+      
+    }
+
+  }
+  
+  
+  
+  &_textBox{
+    text-align: center;
+
+    p {
+      color:#f1f1f1;
+      margin-block-start: 1.7rem;
+      font-size: 2rem;
+
+      @include respond(phone-tab) {
+         font-size: 1.5rem;
+
+         
+    * {
+      font-size: 5vw;
+    }
+
+      }
+
+    }
+  }
+
+  &_heading {
+  
+    h2 {
+      color: #a1a0a0;
+      font-size: 2rem;
+      line-height: 2;
+    }
+
+  }
+
+  .lightbox {
+    position: fixed;
+    transform: scale(0);
+    opacity: 0;
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    top:0;
+    z-index: 20;
+    height: 100%;
+    width: 100%;
+    left:0;
+    background: #0e0505c1;
+    place-content: center;
+   
+    &_close {
+      position: absolute;
+      top:1rem;
+      right:3rem;
+      cursor: pointer;
+
+      h3 {
+        color:#ffff;
+        font-size: 3.5rem;
+        transition: .1s;
+        
+        &:hover {
+          color: #ffffffb3;
+        }
+      }
+    }
+
+  
+
+  
+
+    &_box {
+      flex:  0 0 83%;
+     
+    }
+
+    &_modal {
+       position: absolute;
+       top:50%;
+       left:50%;
+       transform: translate(-50%,-50%);
+       display: flex;
+       column-gap: 1rem;
+       width: 50%;
+       background: #fff;
+       border-radius: 5px;
+       padding: 4px;
+
+       @include respond(phone) {
+        width: 85%;
+       }
+       @include respond(phone-tab) {
+        width: 95%;
+       }
+       @media screen and (max-width:500px) {
+         flex-direction: column;
+       }
+    }
+    
+    &_image {
+      
+    }
+
+    &_slide {
+      height: 50rem;
+
+      @media screen and (max-width:500px) {
+         height: 32rem;
+        }
+
+        img {
+          object-fit: contain;
+        }
+    }
+
+    &_slide.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &_caption {
+      padding: 1rem 16px;
+      background-color: #fff;
+
+      h3 {
+       text-align: center;
+       font-size: 2rem;
+       text-transform: capitalize;
+      }
+    }
+
+    &_dots {
+      flex: 0 0 15%;
+      @media screen and (max-width:500px) {
+        display: flex;
+        }
+
+      .dot {
+        cursor: pointer;
+          padding: 5px;
+          background: #a1a0a0;
+          height: 10rem;
+          border-radius: 3px;
+          object-fit: contain;
+          @media screen and (max-width:500px) {
+            flex: 0 0 25%;
+            }
+      }
+    }
+  }
+
+
+ }
+
+ [data-reveal="img-clippy"] {
+   clip-path: polygon(0 0, 0 45%, 0 86%, 26% 100%, 0 100%);
+   transition: all 1s ease-out;
+    transition-delay: 500ms;
+  }
+  
+  [data-reveal="img-clippy"].revealed {
+  clip-path: polygon(0 0, 100% 0, 100% 49%, 100% 100%, 0 100%);
+ }
+
+ [data-reveal="right"]{
+  transform: translateY(100%);
+  opacity: 0;
+ }
+
+ [data-reveal="right"].revealed {
+  transform: translate(0);
+  opacity: 1;
+ }
+
+[data-reveal="top"] {opacity: 0;}
+
+ [data-reveal="top"].revealed {
+  transition: all 1.3s;
+   opacity: 1;
+   animation: textMoveIn .3s linear backwards;
+ }
+
+
+
+ 
+
+
+
+.boxEffect {
+  transition: all .3s;
+  box-shadow: 4px 4px 16px #e1e1e116, -2px -2px 16px #ffffff1a;
+  border-radius: 5px;
+  transform: translateY(-6%) scale(1.05);
+}

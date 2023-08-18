@@ -1,0 +1,166 @@
+
+
+.sprod-main {
+  background: #fcfcfccf;
+  padding: 11rem 0;
+}
+
+.prod {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 95%;
+  margin: 0 auto;
+
+  @include respond (tab-land) {
+    place-items: center;
+    grid-template-columns: 1fr;
+  }
+
+
+  &_col {
+    flex: 0 0 47%;
+    padding: 2rem;
+  }
+
+  &_content {
+    display: flex;
+
+    
+  }
+
+  &_dots {
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+    padding: 0 .8rem;
+    
+
+    &--dot {
+      width: 8rem;
+
+      * {
+        border-radius: 7px;
+      }
+    }
+  }
+
+  &_show {
+    
+    @include respond (tab-land) {
+      // flex: 0 0 100%;
+    }
+
+    * {
+      border-radius: 7px !important;
+    }
+    
+    &--img {
+      width: 58rem;
+    }
+  }
+
+  &_info {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    &--heading {
+      text-align: center;
+       margin-block-end: 3rem;
+
+      h1 {
+        font-size: 2.4rem;
+        text-transform: capitalize;
+      }
+      span {
+        
+        font-size: 1.8rem;
+        color: #777373;
+      }
+    }
+
+    &--price {
+      font-size: 1.6rem;
+      padding: 1rem;
+    }
+
+    &--size {
+     margin-top: 3rem;
+      .info {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.4rem;
+        
+        span {
+          &:last-child {
+            color:#807f7f;
+          }
+        }
+      }
+    }
+
+    &--sizes {
+      display: flex;
+      gap:5px;
+      flex-wrap: wrap;
+      
+
+     input {
+      // flex: 0 0 5%;
+      width: 7rem;
+      display: grid;
+      place-content: center;
+      padding: 1.7rem;
+      border: 1.5px solid #adabab;
+      border-radius: 3px;
+      cursor: pointer;
+
+      &:hover {
+        border: 1.5px solid #000;
+      }
+
+     }
+
+    }
+
+    &--randomMessage {
+      font-size: 1.6rem;
+      padding: 2rem;
+    }
+
+    &--btn {
+        width: 70%;
+        padding: 1.7rem;
+        border-radius: 30px;
+        margin: 6px 0;
+        font-size: 1.7rem;
+        cursor: pointer;
+        border: none;
+
+        &:first-of-type {
+          background: #000;
+          color: #fff;
+
+          &:hover {
+            background: #0000008d;
+        }
+        }
+        &:last-of-type {
+          background: transparent;
+          border: 1px solid #0000006c;
+          color: #000;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap:4px;
+
+          &:hover {
+            border: 1px solid #000;
+        }
+        }
+    }
+  }
+}

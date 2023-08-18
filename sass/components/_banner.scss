@@ -1,0 +1,180 @@
+[data-reveal="banner"] {
+  clip-path: inset(0 100% 0 0);
+  transition: all 1.4s linear;
+}
+
+[data-reveal="banner"].revealed {
+  clip-path: inset(0 0 0 0);
+}
+
+.banner {
+  margin-block-start: 1.3rem;
+  position: relative;
+
+
+
+  &_details {
+    height: 100%;
+    position: absolute;
+    top:2rem;
+    left: 3rem;
+    letter-spacing: 5px;
+    line-height: 4rem;
+    display: flex;
+    flex-direction: column;
+    // width: 50%;
+
+
+
+    // justify-content: center;
+     
+
+    h3 {
+    //  margin-block-start: 9rem;
+     color: #fff;
+     font-size: 2rem;
+     text-transform: capitalize;
+    }
+
+    h4 {
+      font-size: 1.7rem;
+    }
+
+    p {
+      margin-block-start: 5rem;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+  }
+
+  &_page {
+    // margin-block-start: 9rem;
+  }
+
+  &-heading {
+    color: #070606;
+    text-transform: capitalize;
+    // margin-block-end: 5rem;
+    letter-spacing: 3px;
+    
+    h1 {
+      font-size: 3rem;
+
+      @media screen and (max-width:400px) {
+        font-size: 2rem;
+      }
+    }
+
+    .sales-date {
+     font-size: 1.3rem;
+     width: 1rem !important;
+    }
+
+  }
+
+
+  &_btn {
+    margin: 1.2rem 0; 
+    background:#181717;
+    
+
+    &:hover {
+      color:var(--clr-primary-1);
+      transform: translate(0) !important;
+    }
+  }
+
+ 
+   
+
+  &_deadline {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+    .deadline-format {
+      background: #3333334e;
+      padding: 4px 1rem;
+      border-radius: 5px;
+      
+      @media screen and (max-width:400px) {
+          padding: 2px ;
+      }
+      
+      h4 {
+        color: #fff;
+        font-size: 2.3rem;
+
+        @media screen and (max-width:400px) {
+          font-size: 2rem;
+        }
+      }
+
+      span {
+        font-size: 1.6rem;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  &_img {
+    // flex: 0 0 60%;
+    
+    background: #070606;
+    display: grid;
+    place-items: center;
+    height: 100%;
+     width: 60%;
+  }
+
+  &_prod {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #f4978e,#f8ad9d);
+    height: 60vh;
+    width: 100%;
+    gap: 1rem;
+
+    h3 {
+      color: #fff;
+      font-size: 1.8rem;
+    }
+
+    h4 {
+      font-size: 1.7rem;
+
+    }
+    p {
+      font-size: 1.4rem;
+      letter-spacing: 2px;
+      // margin-top: 3rem;
+    }
+  }
+
+  &_info {
+    display: flex;
+    padding-left: 1rem;
+    flex-direction: column;
+    justify-content: space-around;
+    // width: 45%;
+    flex: 0 0 40%;
+  }
+}
+
+
+// home 
+
+.banner-home {
+  position: relative;
+  height: 70vh;
+
+  &_details {
+    top:0;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}

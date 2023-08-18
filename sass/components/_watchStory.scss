@@ -1,0 +1,39 @@
+
+.story {
+  background: url(/image/hoodies.img/second.avif);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 100vh;
+  display:grid;
+  place-items: center;
+
+  &_page {
+    background-attachment: fixed;
+    // background-color: red;
+    text-align: center;
+    width: 60%;
+    line-height: 2;
+
+    @media screen and (max-width:589px) {
+       width: 85%;
+    }
+
+    p {
+      font-size: 1.9rem;
+      color: #ffff;
+    }
+  }
+
+  [data-reveal="watchtext"] {
+    // transform: translateY(10rem);
+    opacity: 0;
+    transition: all 2s;
+  }
+
+  [data-reveal="watchtext"].revealed{
+    animation: watchtext 2s ease .4s  both ;
+    animation-play-state: running;
+  }
+}

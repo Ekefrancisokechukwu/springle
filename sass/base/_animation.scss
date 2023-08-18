@@ -1,0 +1,79 @@
+
+
+@keyframes loader360 {
+  0% {transform: rotate(0);}
+  100% {transform: rotate(1turn);}
+}
+
+@keyframes landingText {
+  0% {background-position:100%;}
+  100% {background-position:0;}
+}
+
+@keyframes smoothScale {
+  0% {transform: scale(1);}
+  100%{transform: scale(1.15);}
+}
+
+@keyframes slideText {
+  0% {
+    transform: translateY(30rem);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+ @keyframes menuBtn {
+  0% {transform: scaleX(1)};
+  100%{transform: scaleX(0.5)}
+ }
+
+ @keyframes textMoveIn {
+   0%{
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+ }
+
+ @keyframes primaryEffect {
+   0%{
+    opacity: 0;
+    transform: skewX(-0.08turn) translateX(-230%) ;
+  }
+  100% {
+    transform: skewX(-0.08turn) translateX(270%);
+  }
+ }
+
+   @keyframes dobWatch {
+    0% {
+      transform: translateY(100%);
+      height: 1.3rem;
+    }
+    100% {
+      transform: translateY(0);
+    }
+   }
+
+   @keyframes watchtext {
+    0%{
+      opacity: 0;
+      transform: translateY(10rem);
+    }
+
+    80% {
+      opacity: 0.8;
+      // transform: translateY(10rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+   }

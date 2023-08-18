@@ -1,0 +1,20 @@
+
+
+.feature {
+  height: 100vh;
+  background-attachment: fixed;
+  width: 100%;
+  background: #000;
+  
+  &_container {
+    padding: 2rem;
+    display: flex;
+    place-content: center;
+    overflow: scroll;
+  }
+
+  &_box {
+    flex: 0 0 30%;
+    // width: 50rem;
+  }
+}

@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>products</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+
+  <div class="cart-message">
+    Product Has Been Added To Cart
+  </div>
+
+  <!--  CART START -->
+
+  <section class="section-cart">
+    <div class="cart_bg"></div>
+    <div class="cart">
+       <div class="cart_heading">
+        <h1>Shopping Cart</h1>
+        <h3 class="closecart">&times;</h3>
+       </div>
+       <div class="cart_container">
+        <div class="cart_left">
+          <div class="cart_left--info">
+            <h2>free shipping for members</h2>
+            <p>become a kicks member for fast and free shippin  <a href="#">jon us</a> or <a href=""> sign-in</a></p>
+          </div>
+
+          <h1 class="cart_products--heading">bag</h1>
+          <div class="cart_products">
+
+             <!-- <article class="cart_prod">
+              <div class="cart_prod--img">
+                <img src="image/air nitro pink.webp" alt="">
+              </div>
+              <div class="cart_prod--detail">
+                <div class="cart_prod--box">
+                  <h1>air nitro sneaker</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  iure!</p>
+                  <div class="cart_prod--quantity">
+                    <div>
+                      <span>size</span>
+                      <select name="size" id="">
+                      <option value="5.5">5.5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8.9">8.9</option>
+                      </select>
+                    </div>
+                    <div class="">
+                      <span>quantity</span>
+                      <select name="quantity" id="">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="4">5</option>
+                      <option value="4">6</option>
+                      <option value="4">7</option>
+                      <option value="4">8</option>
+                      <option value="4">9</option>
+                      <option value="4">10</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cart_prod--delect">
+                    <svg>
+                      <use xlink:href="image/sprite.svg#icon-heart1"></use>
+                    </svg>
+                    <svg>
+                      <use xlink:href="image/sprite.svg#icon-trashcan"></use>
+                    </svg>
+                </div>
+              </div>
+              <div class="cart_prod--price">
+                N23,700
+              </div>
+             </article> -->
+
+          </div>
+        </div>
+        <div class="cart_right">
+          <h1 class="cart_right--heading">summary</h1>
+
+          <div class="cart_right--box">
+            <ul>
+            <div class="cart_right--promoWrapper">
+              <div class="cart_right--promo">
+                <li> <span>do you have a promo code?</span></li>
+                <svg class="promoBtn">
+                  <use xlink:href="image/sprite.svg#icon-chevron-up"></use>
+                </svg>
+              </div>
+              <div data-promoCode>
+                <input type="text">
+                <button>Apply</button>
+              </div>
+            </div>
+              <li class="cart_subtotal">
+                <div>
+                  <span>subtotal</span> 
+                   <svg>
+                    <use xlink:href="image/sprite.svg#icon-help-circle"></use>
+                   </svg>
+                  </div>
+
+                <span>N0.00</span>
+              </li>
+              <li>
+                 <span>estimated shipping & handling</span>
+                  <span>N500</span>
+              </li>
+              <li> 
+                <span>estimated tax</span>
+                <svg>
+                  <use xlink:href="image/sprite.svg#icon-help-circle"></use>
+                </svg>
+              </li>
+              </ul>
+
+              <div class="cart_total">
+                <span>total</span>
+                <span id="totalAmount">0.00</span>
+              </div>
+
+              <div class="cart_btn">
+                <button>checkout</button>
+                <button class="clear-cart">Clear Cart</button>
+              </div>
+          </div>
+        </div>
+       </div>
+    </div>
+  </section>
+<!--  CART END -->
+
+ <main class="main">
+
+ <!-- header start -->
+ <header class="header">
+  <div class="header_info">
+    <svg>
+      <use xlink:href="image/sprite.svg#icon-basketball"></use>
+    </svg>
+    <ul>
+      <li><a href="#">find a store</a></li>
+      <li><a href="#">help</a></li>
+      <li><a href="#">jion us</a></li>
+      <li><a href="#">sign in</a></li>
+    </ul>
+  </div>
+   
+  <nav class="navbar"> 
+    <div class="navbar_logo">
+      <h1>kicks sahara</h1>
+    </div>
+
+   <aside  class="navbar_aside">
+     <span class="navbar_aside--close">&times;</span>
+
+     <div class="navbar_wrapper">
+  
+       <ul class="navbar_list">
+         <li class="navbar_item"><a href="index.html" class="navbar_link">home</a>
+           
+         </li>
+     
+         <li class="navbar_item"><a href="products.html" class="navbar_link">products</a>
+           
+         </li>
+     
+         <li class="navbar_item"><a href="/hoodies & more.html" class="navbar_link">watch & m</a>
+           
+         </li>
+     
+         <li class="navbar_item"><a href="#" class="navbar_link">blogs</a>
+           
+         </li>
+     
+         <li class="navbar_item"><a href="#" class="navbar_link">about</a>
+           
+         </li>
+         <hr class="navbar_link-slider animation">
+       </ul>
+     
+        <div class="navbar_aside--info">
+        
+          <div class="learn">
+            <p>
+              Become a Kicks Member for the best products,
+               inspiration and stories in sport.
+                <a href="#">Learn More</a>
+            </p>
+          </div>
+
+
+          <div class="sort">
+
+            <div>
+              <svg>
+                <use xlink:href="image/sprite.svg#icon-shopping-order"></use>
+              </svg>
+              <span>Bag</span>
+            </div>
+            <div>
+              <svg>
+                <use xlink:href="image/sprite.svg#icon-shopping-bag1"></use>
+              </svg>
+              <span>orders</span>
+            </div>
+            <div>
+              <svg>
+                <use xlink:href="image/sprite.svg#icon-shop"></use>
+              </svg>
+              <span>find a shop</span>
+            </div>
+            <div>
+              <svg>
+                <use xlink:href="image/sprite.svg#icon-help-circle"></use>
+              </svg>
+              <span>help</span>
+            </div>
+
+          </div>
+
+        <div class="address">
+          <h2>contact us</h2>
+           <ul>
+            <li><span>Address:</span> St bmigham</li>
+            <li><span>Tele:</span> +123 450-223-048</li>
+           </ul>
+        </div>
+
+        <div class="media">
+          <h2>Media</h2>
+           <ul>
+            <li>
+            <svg>
+              <use xlink:href="image/sprite.svg#icon-instagram1"></use>
+            </svg>
+          </li>
+            <li>
+            <svg>
+              <use xlink:href="image/sprite.svg#icon-youtube"></use>
+            </svg>
+          </li>
+            <li>
+            <svg>
+              <use xlink:href="image/sprite.svg#icon-facebook2"></use>
+            </svg>
+          </li>
+            <li>
+            <svg>
+              <use xlink:href="image/sprite.svg#icon-twitter"></use>
+            </svg>
+          </li>
+
+           </ul>
+        </div>
+
+
+        
+     </div>
+
+      </div>
+   </aside>
+
+    <div class="navbar_right">
+      <div class="navbar_icon">
+        <svg class="likee">
+          <use xlink:href="image/sprite.svg#icon-heart1"></use>
+        </svg>
+      </div>
+      <div class="navbar_icon cart-icon">
+        <svg>
+          <use xlink:href="image/sprite.svg#icon-shopping-cart"></use>
+        </svg>
+        <div class="cart-icon_info">
+          <p> <span class="count-text">your cart is empty</span> <span id="cart-itemCount">0</span> items</p>
+        </div>
+      </div>
+      <div class="navbar_open navbar_icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+  </header>
+  <!-- header end -->
+
+
+  <section class="section-banner" data-reveal="banner">
+    <h1 class="header-primary">happening now</h1>
+
+    <div class="banner">
+        <div class="banner_prod">
+
+          <div class="banner_info">
+            <figcaption class="banner-heading">
+             <h1>new arrival sales</h1>
+             <span class="sales-date">
+              sales ends on thursday, 20 April 2023, 11:30am
+             </span>
+            </figcaption>
+            <div class="banner_deadline">
+              <!-- days -->
+              <div class="deadline-format">
+                <div>
+                  <h4 class="days">34</h4>
+                  <span>days</span>
+                </div>
+              </div>
+              <!-- end of days -->
+              <!-- days -->
+              <div class="deadline-format">
+                <div>
+                  <h4 class="hours">34</h4>
+                  <span>hours</span>
+                </div>
+              </div>
+              <!-- end of days -->
+              <!-- minutes -->
+              <div class="deadline-format">
+                <div>
+                  <h4 class="minutes">34</h4>
+                  <span>mins</span>
+                </div>
+              </div>
+              <!-- end of days -->
+              <!-- minutes -->
+              <div class="deadline-format">
+                <div>
+                  <h4 class="seconds">34</h4>
+                  <span>secs</span>
+                </div>
+              </div>
+              <!-- end of days -->
+            </div>
+            <div class="banner_page">
+              <h3>mega sales</h3>
+               <h4>shop our newest products</h4>
+               <button class="primary-btn banner_btn">
+                &#x21A1; Shop
+               </button>
+              </div>
+          </div>
+
+
+            <div class="banner_img">
+              <img src="image/banner2.png" alt="">
+            </div>
+            
+        </div>
+    </div>
+  </section>
+  
+  
+  <section class="product">
+    <div class="product_filter">
+      <div class="filter-info">
+        <span class="filter-toggle">
+         <h4>
+          hide
+        </h4> 
+          filters
+
+        </span> 
+        
+        <svg>
+          <use xlink:href="image/sprite.svg#icon-equalizer"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="product_container">
+
+      <div class="prodfi-box">
+        <div class="toogle-prodFilter">
+         <svg>
+           <use xlink:href="image/sprite.svg#icon-equalizer"></use>
+         </svg>
+         <span>Filter</span>
+        </div>
+        
+        <div class="prodfi-box_search">
+          <input type="search" id="prod-search" placeholder="Search for products">
+           <svg>
+            <use xlink:href="image/sprite.svg#icon-search1"></use>
+           </svg>
+        </div>
+      </div>
+      <div class="product_left">
+        <div class="closeFilter">close</div>
+        <div class="product_category" data-head>
+          <h1 class="heading-pod">category</h1>
+          <ul>
+            <li>
+              <input type="checkbox">
+              <label for="">
+                <span></span>
+                shoe
+              </label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label for="">
+                <span></span>
+                hoody
+              </label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label for="">
+                <span></span>
+                air flex
+              </label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label for="">
+                <span></span>
+                jackets
+              </label>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="product_brand" data-head>
+          <h1 class="heading-pod">brands</h1>
+
+          <div class="prod-search" >
+            <button>Search</button>
+            <input type="search" placeholder="Search for shoe">
+            <div class="prod-icon">
+              <svg>
+                <use xlink:href="image/sprite.svg#icon-search1"></use>
+              </svg>
+            </div>
+          </div>
+          <ul>
+            <li>
+              <input type="checkbox" name="brand">
+              <label for="brand">
+                <span></span>
+              stilizy
+             </label> 
+            </li>
+            <li>
+              <input type="checkbox">
+              <label for="nike">
+                <span></span>
+              nike
+             </label> 
+            </li>
+            <li>
+              <input type="checkbox">
+              <label for="nike">
+                <span></span>
+               splendor
+             </label> 
+            </li>
+            <li>
+              <input type="checkbox">
+              <label for="nike">
+                <span></span>
+              xv mask
+             </label> 
+            </li>
+            
+          </ul>
+        </div>
+        <div class="product_price" data-head>
+          <h1 class="heading-pod">price range(N)</h1>
+            <input type="range"  max="100" class="inpu_rang">
+            <div class="product_price--count">
+              <h2>924</h2>
+              <span>-</span>
+              <h2>1000</h2>
+            </div>
+        </div>
+
+        <div class="product_gender" data-head>
+          <div class="product_gender-head">
+          <h1 class="heading-pod">gender</h1>
+            <svg class="gender-btn">
+              <use xlink:href="image/sprite.svg#icon-chevron-down"></use>
+            </svg>
+          </div>
+           <ul data-gender>
+            <li>
+              <input type="checkbox">
+              <label>
+                <span></span>
+                male
+              </label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label>
+                <span></span>
+                female
+              </label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label>
+                <span></span>
+                unsex
+              </label>
+              </li>
+           </ul>
+        </div>
+
+      </div>
+
+      <div class="product_products">
+
+        <div class="item_box"> </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- NEW ARRIVAL PRODUCTS START -->
+  
+
+  <section class="section-arrival">
+      
+    <div class="arrival">
+
+
+      <div class="arrival_control">
+        <h1 class="arrival_heading">nike inspired</h1>
+
+        <div class="arrival_control-btn">
+          <span id="arriLeft">&#10094;</span>
+          <span id="arriRight">&#10095;</span>
+        </div>
+
+      </div>
+
+      <div class="arrival_wrapper">
+         
+        <!-- single product  start-->
+        <article class="arrival_product">   
+          <div class="arrival_slide">
+            <img src="image/air nitroC.webp" alt="nike">
+          </div>
+
+           <div class="arrival_imgbox">
+            <div class="arrival_dot">
+              <img src="image/air nitroC.webp" alt="">
+            </div>
+            <div class="arrival_dot">
+              <img src="image/air nitro pink.webp" alt="">
+            </div>
+            <div class="arrival_dot">
+              <img src="image/air nitro.webp" alt="">
+            </div>
+            <div class="arrival_dot">
+              <img src="image/air1.webp" alt="">
+            </div>
+           
+          </div>
+
+          <div class="arrival_details">
+            <h1>nike air max 90 futra</h1>
+            <h4>men's shoe</h4>
+            <span>$150</span>
+          </div>
+         </article>
+        <!-- single product  end-->
+
+        <!-- single product  start-->
+        <article class="arrival_product">   
+          <div class="arrival_slide">
+            <img src="image/max 2702.webp" alt="nike">
+          </div>
+
+           <div class="arrival_imgbox">
+             <div class="arrival_dot">
+               <img src="image/max 2702.webp" alt="">
+             </div>
+            <div class="arrival_dot">
+              <img src="image/max 2701.webp" alt="">
+            </div>
+            <div class="arrival_dot">
+              <img src="image/max 2703.webp" alt="">
+            </div>
+            <div class="arrival_dot">
+              <img src="image/max 2704.webp" alt="">
+            </div>
+           
+          </div>
+          <div class="arrival_details">
+            <h1>nike air max 90 futra</h1>
+          </div>
+         </article>
+        <!-- single product  end-->
+
+        <!-- single product  start-->
+        <article class="arrival_product">   
+          <div class="arrival_slide">
+            <img src="image/gt1.webp" alt="nike">
+          </div>
+
+           <div class="arrival_imgbox">
+            <div class="arrival_dot">
+              <img src="image/gt1.webp" alt="">
+            </div>
+            <div class="arrival_dot">
+              <img src="image/gt2.webp" alt="">
+            </div>
+            <div class="arrival_dot">
+              <img src="image/gt3.webp" alt="">
+            </div>
+            <div class="arrival_dot">
+              <img src="image/gt4.webp" alt="">
+            </div>
+           
+          </div>
+          <div class="arrival_details">
+            <h1>nike air max 90 futra</h1>
+          </div>
+         </article>
+        <!-- single product  end-->
+        <!-- single product  start-->
+        <article class="arrival_product">   
+          <div class="arrival_slide">
+            <img src="image/gray1.webp" alt="nike">
+          </div>
+
+           <div class="arrival_imgbox">
+            <div class="arrival_dot">
+              <img src="image/gray1.webp" alt="">
+            </div>
+            <div class="arrival_dot">
+              <img src="image/gray2.webp" alt="">
+            </div>
+            <div class="arrival_dot">
+              <img src="image/gray3.webp" alt="">
+            </div>
+            <div class="arrival_dot">
+              <img src="image/gray4.webp" alt="">
+            </div>
+           
+          </div>
+          <div class="arrival_details">
+            <h1>nike air max 90 futra</h1>
+          </div>
+         </article>
+        <!-- single product  end-->
+        <!-- single product  start-->
+        <article class="arrival_product">   
+          <div class="arrival_slide">
+            <img src="image/gen1.webp" alt="nike">
+          </div>
+
+           <div class="arrival_imgbox">
+            <div class="arrival_dot">
+              <img src="image/gen1.webp" alt="">
+            </div>
+            <div class="arrival_dot">
+              <img src="image/gen2.webp" alt="">
+            </div>
+            <div class="arrival_dot">
+              <img src="image/gen3.webp" alt="">
+            </div>
+           
+          </div>
+          <div class="arrival_details">
+            <h1>nike air max 90 futra</h1>
+          </div>
+         </article>
+        <!-- single product  end-->
+
+        <!-- single product  start-->
+        <article class="arrival_product">   
+          <div class="arrival_slide">
+            <img src="image/q1.webp" alt="nike">
+          </div>
+
+           <div class="arrival_imgbox">
+            <div class="arrival_dot">
+              <img src="image/q1.webp" alt="">
+            </div>
+            <div class="arrival_dot">
+              <img src="image/q2.webp" alt="">
+            </div>
+           
+          </div>
+          <div class="arrival_details">
+            <h1>nike air max 90 futra</h1>
+          </div>
+         </article>
+        <!-- single product  end-->
+
+       
+
+
+      
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW ARRIVAL PRODUCTS END -->
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer_container">
+
+    <div class="footer_scroll">
+      <div class="footer_scroll--social">
+        <div title="comeing soon">
+          <svg>
+            <use xlink:href="image/sprite.svg#icon-twitter"></use>
+          </svg>
+        </div>
+        <div title="comeing soon">
+          <svg>
+            <use xlink:href="image/sprite.svg#icon-facebook2"></use>
+          </svg>
+        </div>
+         <div title="comeing soon">
+           <svg>
+             <use xlink:href="image/sprite.svg#icon-youtube"></use>
+           </svg>
+         </div>
+
+         <div title="comeing soon">
+           <svg>
+             <use xlink:href="image/sprite.svg#icon-instagram1"></use>
+           </svg>
+         </div>
+      </div>
+      <div class="scroll">
+        <svg>
+          <use xlink:href="image/sprite.svg#icon-chevron-up"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="footer_content">
+      <div class="footer_listbox">
+        <ul>
+          <h3>gift cards</h3>
+          <li><a href="#">promotion</a></li>
+          <li><a href="#">find a store</a></li>
+          <li><a href="#">sign up for email</a></li>
+          <li><a href="#">become a member</a></li>
+          <li><a href="#">kicks journal</a></li>
+          <li><a href="#">send us feedback</a></li>
+        </ul>
+        <ul>
+          <h3>get help</h3>
+          <li><a href="#">order staus</a></li>
+          <li><a href="#">shipping and delivery</a></li>
+          <li><a href="#">returns</a></li>
+          <li><a href="#">order cancellation</a></li>
+          <li><a href="#">paymant options</a></li>
+          <li><a href="#">gift card balance</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+        <ul>
+          <h3>about kicks sahara</h3>
+          <li><a href="#">news</a></li>
+          <li><a href="#">careers</a></li>
+          <li><a href="#">investors</a></li>
+          <li><a href="#">purpose</a></li>
+          <li><a href="#">sustainability</a></li>
+        </ul>
+      </div>
+
+      <div class="footer_info">
+        <h1>frequently asked questions</h1>
+        <div class="footer_info--box">
+          <div class="footer_info--head">
+            <h2>do you buy cans cloth or gold accesories</h2>
+            <svg>
+              <use xlink:href="image/sprite.svg#icon-chevron-up"></use>
+            </svg>
+          </div>
+          <div class="footer_info--text">
+            <p>Yes, we do buy diamonds over 1.00 carat. We also buy watches, gold jewelry and diamond jewelry.
+               If you have an item you would like to sell, please call our store at 404-842-0266 to set up an appointment with our Buying Team.
+            </p>
+          </div>
+        </div>
+        <div class="footer_info--box">
+          <div class="footer_info--head">
+            <h2>where is kicks sahara located and what are your store hours</h2>
+            <svg>
+              <use xlink:href="image/sprite.svg#icon-chevron-up"></use>
+            </svg>
+          </div>
+          <div class="footer_info--text">
+            <p>kicks sahara is located in the  <span>comming soon.</span>  Our address is 3255 Peachtree Road NE; Ste 2, Atlanta, GA 30305. Monday - Friday 11:00am-6:30pm EST.
+               You can also shop online with us at
+            </p>
+          </div>
+        </div>
+        <div class="footer_info--box">
+          <div class="footer_info--head">
+            <h2>will i be charged sales tax on my kicks.com purchase?</h2>
+            <svg>
+              <use xlink:href="image/sprite.svg#icon-chevron-up"></use>
+            </svg>
+          </div>
+          <div class="footer_info--text">
+            <p>All orders within the state of Georgia are subject to 8.9% sales tax. If your order is being shipped outside of the
+               state of Georgia, you will not be charged sales tax.
+            </p>
+          </div>
+        </div>
+        <div class="footer_info--box">
+          <div class="footer_info--head">
+            <h2>how often do you update your inventory</h2>
+            <svg>
+              <use xlink:href="image/sprite.svg#icon-chevron-up"></use>
+            </svg>
+          </div>
+          <div class="footer_info--text">
+            <p>
+              We update our inventory on a weekly basis. Check back with us weekly and see what is new!
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  <div class="footer_vr">
+    <div class="footer_vr--left">
+      <div class="">
+        <svg>
+          <use xlink:href="image/sprite.svg#icon-location"></use>
+        </svg>
+          <span>Comeing soon</span>
+      </div>
+      <div class="">
+        &copy; <span id="footYear">2023</span> Kicks sahara,Inc,All Right Reserved
+      </div>
+    </div>
+    <div class="footer_vr--right">
+       <ul>
+        <li><a href="">Guides</a></li>
+        <li><a href="">terms of sale</a></li>
+        <li><a href="">term of use</a></li>
+        <li><a href="">kicks privacy policy</a></li>
+        <li><a href="">your privacy choices</a></li>
+        <li><a href="">CA supply chains act</a></li>
+       </ul>
+    </div>
+  </div>
+   </div>
+  </footer>
+
+  <script src="src/sidebar.js"></script>
+  <script src="src/product.js"></script>
+  <script src="src/cart.js"></script>
+  <script src="src/countdownProd.js"></script>
+  <script src="./src/main.js"></script>
+  <script type="module" src="src/scroll.js"></script>
+</body>
+</html>

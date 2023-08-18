@@ -1,0 +1,20 @@
+
+
+
+.main-blog {
+   padding: 4rem;
+   background: #04143aff;
+}
+
+.blog {
+
+  * {
+    color:#fff;
+  }
+  width: 85%;
+  margin: 0 auto;
+
+  @include respond(phone-tab) {
+    width: 95%;
+  }
+}

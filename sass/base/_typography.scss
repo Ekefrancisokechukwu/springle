@@ -1,0 +1,105 @@
+
+
+.btn-main {
+        padding: 8px;
+        display: inline-block;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        cursor: pointer;
+        outline: 0;
+        font-weight: 700;
+        color:#000;
+        background: #daa520;
+        border: 1px solid #f1f1f1;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        @include respond(tab-land) {
+          display: none;
+        }
+}
+
+
+
+.header-primary {
+  color: #fff;
+  font-size: 2.4rem;
+  font-family: Roboto Condensed;
+  text-transform: uppercase;
+  position: relative;
+  
+}
+
+ .heading-secondary{
+  text-align: center;
+  font-size: 3rem;
+  font-family: Roboto Condensed;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  color: #f1f1f1;
+  text-shadow: 5px 4px 6px rgba(0,0,0,434);
+ 
+  
+  @media screen and (max-width:451) {
+        font-size: 1.5rem;
+  }
+
+ }
+
+ .primary-btn {
+  line-height: 2;
+  margin-block-start: 1rem;
+  width: 20rem;
+  cursor: pointer;
+  color:var(--clr-gray-light-1);
+  background: var( --clr-goldrod);
+  box-shadow:  0px 3px 8px 1px #0908086e;
+  transform:translateY(-3%);
+  outline: 0;
+  border: .03px solid #8a8a8a41;
+  padding: 5px;
+  font-size: 2rem;
+  font-family: Kaushan Script, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: all .3s linear;
+
+  &::after {
+    content: "";
+   position: absolute;
+   width:50%;
+   height: 200%;
+   background: radial-gradient(transparent 0%, #ffffff2c, transparent);;
+   animation: primaryEffect 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) 100ms infinite forwards;
+  }
+
+
+  &:hover {
+    transform: translate(0);
+  }
+
+  &:active{
+    transform: translateY(3%);
+    box-shadow: none;
+
+  }
+}
+
+.heading-pod {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  color: var(--clr-gray-light-1);
+  font-family: Roboto Condensed;
+}
+
+.blog-head{
+   font-size: 3.3rem;
+   font-weight: 500;
+   text-transform: capitalize;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(to right,#4361ee, #4cc9f0);
+    color: transparent !important;
+    
+    -webkit-background-clip: text;
+}
+  

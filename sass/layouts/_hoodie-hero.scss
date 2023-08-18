@@ -1,0 +1,81 @@
+
+
+
+
+.bg-video {
+  height: 100vh;
+  // width: 100%;
+  position: relative;
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &_control {
+    position: absolute;
+    height: 4rem;
+    width: 4rem;
+    // display: grid;
+    // place-content: center;
+    border: 1px solid #fff;
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+    bottom: 4rem;
+    left: 2rem;
+
+    span {
+
+      fill:#ffff;
+     
+      &.play {
+        display: none;
+      }
+    }
+
+    
+  }
+  .active &_control{
+     display: none !important;
+  }
+  .active .play{
+    display: block;
+  }
+  .active .pause{
+    display: none;
+  }
+
+  &_detail {
+    position: absolute;
+    bottom:0;
+    color: #ffff;
+    left: 50%;
+    bottom:2rem;
+    transform: translate(-50%,-50%);
+    display: grid;
+    place-items: center;
+    
+
+
+
+    span {
+      width: 2px;
+      height: 2.6rem;
+      background-color: #ffffff4b;
+      margin-block-start: .8rem;
+      line-height: 4;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 1rem;
+        width: 100%;
+        background: #fff;
+        animation: dobWatch .5s ease-in infinite both alternate;
+      }
+    }
+  }
+}
